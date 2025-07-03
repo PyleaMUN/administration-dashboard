@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PyleaMUN Administration Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F7F8; /* Lighter background */
+            color: #333;
+        }
+        .letterhead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #EAEFEC; /* Paler letterhead */
+            border-bottom: 2px solid #D1D9E0;
+            padding: 10px 20px;
+            height: 100px;
+        }
+        .address, .contact {
+            width: 25%;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .contact div { margin: 2px 0; }
+        .logo { width: 120px; height: auto; }
+        .letterhead a { color: #5B86B2; text-decoration: none; } /* Paler link color */
+        .letterhead a:hover { text-decoration: underline; }
+        main { 
+            padding: 2em; 
+            max-width: 800px; 
+            margin: auto; 
+        }
+        h1 { 
+            text-align: center; 
+            color: #4A5C6A; /* Softer heading color */
+            margin-bottom: 1em; 
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #607D8B; /* Softer subheading color */
+            border-bottom: 1px solid #CFD8DC;
+            padding-bottom: 0.5em;
+            margin-top: 2em;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 1em;              /* Space between buttons */
+            margin-top: 1.5em;
+        }
+        .button-link {
+            display: block;
+            background-color: #A9BCD0; /* Pale blue button */
+            color: #1B262C;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            border: 1px solid #98AAB8;
+        }
+        .button-link:hover {
+            background-color: #98AAB8; /* Slightly darker on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letterhead">
+        <div class="address">
+            <strong>4 Isminis Str.</strong><br>
+            Pylaia, Thessaloniki - 55535
+        </div>
+        <div>
+            <img src="https://pyleamun.github.io/interview-guide/pyleaMUNfinallogo_transparent.png" alt="PyleaMUN Logo" class="logo">
+        </div>
+        <div class="contact">
+            <div>📞 +30 2310329199</div>
+            <div>📧 <a href="mailto:pyleamun@gmail.com">pyleamun@gmail.com</a></div>
+            <div>🌐 <a href="https://pyleamun.github.io/pyleamun2026/" target="_blank">pyleamun.github.io/pyleamun2026</a></div>
+        </div>
+    </div>
+
+    <main>
+        <h1>PyleaMUN Administration Dashboard</h1>
+
+        <div class="category">
+            <h2>🏫 Schools, Delegates, Student Officers</h2>
+            <div class="button-container">
+                <a href="https://pyleamun.github.io/schools-initial/" target="_blank" class="button-link">📝 Initial Registration for Schools</a>
+                <a href="https://pyleamun.github.io/delegation-registration/" target="_blank" class="button-link">🧑‍🤝‍🧑 School Delegation Registration Form</a>
+                <a href="https://pyleamun.github.io/student-officers-applications/" target="_blank" class="button-link">👩‍⚖️ Student Officer & Committee Applications</a>
+                <a href="https://pyleamun.github.io/delegate-entry/" target="_blank" class="button-link">🔑 HR Registration</a>
+                <a href="https://pyleamun.github.io/delegate-list/" target="_blank" class="button-link">📋 Registered Human Resources List</a>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>📜 Certificates and Awards</h2>
+            <div class="button-container">
+                <a href="https://pyleamun.github.io/certificate-generator/" target="_blank" class="button-link">🏅 PyleaMUN 2026 Certificate Generator</a>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>📚 Other Material</h2>
+            <div class="button-container">
+                <a href="https://pyleamun.github.io/member-duties/" target="_blank" class="button-link">👔 PyleaMUN: Duties & Hierarchy</a>
+                <a href="https://pyleamun.github.io/interview-guide/" target="_blank" class="button-link">🎤 Guidelines for the PyleaMUN Student Officers' Interview</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
